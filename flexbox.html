@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+border: 3px solid black;
+display: flex;
+flex-direction: row;
+/*flex-wrap: wrap;*/
+height: 500px;
+justify-content: space-around;
+align-items: start;
+align-content: start;/*items k bich vake space kpo wrap krne k liye*/
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+        /*jiska order jyada vo hi box aage aaga right me*/ 
+        #box1{
+background-color: aqua;
+order: 500;
+/*flex-shrink: 4;*/
+flex-grow: 4;
+        }
+        #box2{
+            background-color: blue;
+        }
+        #box3{
+            background-color: orange;
+            flex-basis: 400px;
+        }
+        #box4{
+            background-color: brown;
+order: -1;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box" id="box1">box1</div>
+    <div class="box" id ="box2">box2</div>
+    <div class="box" id="box3">box3</div>
+    <div class="box" id="box4">box4</div>
+</div>
+</body>
+</html>
